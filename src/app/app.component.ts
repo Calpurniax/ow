@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {Character} from './character.model'
+import { Character } from './character.model'
 
 @Component({
   selector: 'app-root',
@@ -16,19 +16,24 @@ export class AppComponent {
     nickname:"Valkyrya",
     hoursPlayed:500,
     achievements:25,
-  }
+  };
   player2={
     nickname:"Lomo.Adobado",
     hoursPlayed:1000,
     achievements:200,
-  }
+  };
+  player3={
+    nickname:"",
+    hoursPlayed:0,
+    achievements:0,
+  };
   players:string[]=["Valkyrya", "Lomo.Adobado", "Rubander"];
   newPlayer:string ="";
   characters: Character[]=[
     {
       name:'orisa',
       role:'tank',
-      image: './assets/images/orisa.jpg'
+      image: './assets/images/orisa.jpg',      
     },
     {
       name:'soldier:76',

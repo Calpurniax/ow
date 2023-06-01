@@ -73,3 +73,16 @@
     <p>Role: {{character.role}}</p>
   </li>
 </ul>
+<!-- EJEMPLO  DE NGSWITCH-->
+<section>
+  <h2>ngSwitch</h2>
+  <input type="text" name="player3Input" id="player3Input"[(ngModel)]="player3.nickname">
+  <p [ngSwitch]="player3.nickname">
+    <span *ngSwitchCase='"Lomo.Adobado"'>El jugador es Lomo</span>
+    <span *ngSwitchCase='"Valkyrya"'>La jugadora es Valkyrya</span>
+    <span *ngSwitchCase='"Rubander"'>El jugador es Rubander</span>
+    <span *ngSwitchDefault>No conocemos al jugador</span>
+    <!-- se pone cada caso en un switch y el que queramos que renderice cuando no hay coincidencia es el ngSwitchDefault, 
+      ten en cuenta que tienen q estar dentro de un contenedor que tenga [ngSwitch]-->
+    </p>
+</section>
