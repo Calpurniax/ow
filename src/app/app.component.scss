@@ -3,3 +3,24 @@
   background-color: red;
   overflow: auto;
 }
+.objRender__container{  
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-gap:3%;
+  text-transform: capitalize;
+  &__card{
+    img{
+      width: 100%;
+      border-radius: 10px;
+    }
+    
+  }
+}
+.messageError{
+  color:red;
+  visibility: hidden;
+  &.active{
+    visibility: visible;
+  }
+}
